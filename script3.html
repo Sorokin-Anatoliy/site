@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>скрипт 3</title>
+<link rel="stylesheet" href="style.css">
+<nav class="blog-navigation">
+        <a href="index.html">На главную</a>
+      </nav>
+
+<input type="button" value="1 скрипт" name="a" OnClick="a();">
+<input type="button" value="2 скрипт" name="b" OnClick="b();">
+<input type="button" value="3 скрипт" name="c" OnClick="c();">
+<input type="button" value="4 скрипт" name="d" OnClick="d();">
+
+<script language="JavaScript">
+function a()
+{
+var displayLine; //переменная для хранения свойств
+for (var i in navigator) {
+displayLine =i+"="+navigator[i];
+document.write(displayLine+"<BR>")
+}
+}
+function b()
+{
+    var displayLine; //переменная для хранения свойств
+for (var a in window) {
+displayLine =a+"="+window[a];
+document.write(displayLine+"<BR>")
+}
+}
+
+function c()
+{
+ var displayLine; //переменная для хранения свойств
+for (var d in document) {
+displayLine =d+"="+document[d];
+document.write(displayLine+"<BR>")
+}
+}
+
+function d()
+{
+    var displayLine; //переменная для хранения свойств
+for (var l in location) {
+displayLine =l+"="+location[l];
+document.write(displayLine+"<BR>")
+}
+}
+</script>
+ 
+</body>
+</html>
